@@ -54,6 +54,10 @@ export const BentoGridItem = ({
     navigator.clipboard.writeText('contact@farhan.dev');
 
     setCopied(true)
+
+    setTimeout(() => {
+      setCopied(false)
+    }, 2000);
   }
   return (
     <div
@@ -92,7 +96,7 @@ export const BentoGridItem = ({
         </div>
         {id === 6 && (
           <BackgroundGradientAnimation>
-            <div className="absolute z-50 flex items-center justify-center text-white font-bold" />
+            {/* <div className="absolute z-50 flex items-center justify-center text-white font-bold" /> */}
           </BackgroundGradientAnimation>
         )}
         <div
